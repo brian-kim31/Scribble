@@ -8,4 +8,14 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
+    
     return render_template('index.html')
+
+
+@app.route('/scribble/<scribble_id>')
+def scribble(scribble_id):
+
+    '''
+    View scribble page function that returns the scribble details page and its data
+    '''
+    return render_template('scribble.html',id = scribble_id)
