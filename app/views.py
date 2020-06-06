@@ -12,10 +12,11 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/scribble/<scribble_id>')
+@app.route('/scribble/<int:scribble_id>')
 def scribble(scribble_id):
 
     '''
     View scribble page function that returns the scribble details page and its data
     '''
-    return render_template('scribble.html',id = scribble_id)
+    message = 'Scribble'
+    return render_template('scribble.html',id = scribble_id, message = message)
