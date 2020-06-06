@@ -1,0 +1,21 @@
+ {% extends 'bootstrap/base.html'%}
+<!-- Navbar block  -->
+{% block navbar %} {% include 'navbar.html' %} {% endblock %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"> {% if title %}
+    <title> {{ title }}</title>
+    {% else %}
+    <title> Welcome to the Sribble, just the best </title>
+    {% endif %}
+</head>
+
+<body>
+    <!-- Content block -->
+
+    {% block content %} {% endblock%}
+</body>
+
+</html>
