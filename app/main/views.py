@@ -1,10 +1,12 @@
-from flask import render_template
-from app import app
+from flask import render_template,request,redirect,url_for,abort
+from . import main
 from .forms import CommentForm
+from flask_login import login_required
+
 
 
 # Views
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
@@ -16,7 +18,7 @@ def index():
     return render_template('index.html',  title = title, message = message, click_bait = click_bait)
 
 
-@app.route('/scribble')
+@main.route('/scribble')
 def scribble():
 
     '''
@@ -27,4 +29,7 @@ def scribble():
     return render_template('scribble.html', title = title)
 
 
-
+# @main.route('/pitch/comment/new/<int:id>', methods = ['GET','POST'])
+# @login_required
+# def new_comment(id):
+    
