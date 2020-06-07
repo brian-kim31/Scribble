@@ -14,7 +14,8 @@ class User(UserMixin,db.Model):
     id = db.Column(db.Integer,primary_key = True)
     username = db.Column(db.String(255),index = True)
     email = db.Column(db.String(255),unique = True,index = True)
-    role_id = db.Column(db.Integer,db.ForeignKey('roles.id'))
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
     secure_password = db.Column(db.String(255),nullable = False)
 
     @property
@@ -35,14 +36,12 @@ class User(UserMixin,db.Model):
         return f'User {self.username}'
 
     
+# class Role(db.Model):
+#     __tablename__ = 'roles'
 
-
-class Role(db.Model):
-    __tablename__ = 'roles'
-
-    id = db.Column(db.Integer,primary_key = True)
-    name = db.Column(db.String(255))
-    users = db.relationship('User',backref = 'role',lazy="dynamic")
-    pass_secure = db.Column(db.String(255))
+#     id = db.Column(db.Integer,primary_key = True)
+#     name = db.Column(db.String(255))
+#     users = db.relationship('User',backref = 'role',lazy="dynamic")
+#     pass_secure = db.Column(db.String(255))
 
     
