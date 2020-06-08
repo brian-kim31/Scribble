@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_960_720.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+.navbar {
+    background-color: khaki;
+    ;
+}
