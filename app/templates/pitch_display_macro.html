@@ -1,23 +1,24 @@
 {% extends 'base.html' %} {% macro display_pitches(posts) %}
 
-<div class="container-fluid">
+<div class="container-fluid" style="background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);">
     <div>
         <br><br>
     </div>
-    <div class="jumbotron" style="background-color: khaki;">
+    <div class="jumbotron" style='background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);' '>
         <div class="overlay">
-            <h2 class=" ">Pitches</h2>
-            <a href="/new_post"><button class="btn">New Pitch</button></a>
+            <h2 class=" ">Scribble something..</h2>
+            <a href="/new_post"><button class="btn btn-primary">New Pitch</button></a>
         </div>
     </div>
     <div class="card-columns">
         {% if posts %} {% for my_post in posts %}
         <div class="card">
-            <div class="card-body" style="background-color: khaki;">
+            <div class="card-body" style="background-color:grey">
+                <p>{{my_post.title}}</p>
                 <p>{{my_post.post}}</p>
                 <p><br>{{my_post.category}}</p>
             </div>
-            <div class="card-footer foot_flex d-block mx-auto" style="background-color: khaki;">
+            <div class="card-footer foot_flex d-block mx-auto" style="background-color: teal">
                 <a href="/comment/{{my_post.id}}"><button class="btn btn-info">Comment</button></a>
                 <a href="/like/{{my_post.id}}"><button class="btn btn-success">Like {{my_post.up_vote.count()}}</button></a>
                 <h1>{{upvotes}}</h1>
