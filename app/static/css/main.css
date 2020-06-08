@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#centered-card {
+    margin: 0;
+    padding: 0;
+}
+
+#hellobutton {
+    margin-top: 20px;
+    border: 0;
+    background: orangered;
+    width: 80px;
+    height: 40px;
+    box-shadow: #989898 0 0 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    justify-content: right;
+}
+
+#hellobutton:hover {
+    background: darkmagenta;
+}
+
+
+/*Home styles*/
+
+.container {
+    max-width: 960px;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#buttons {
+    display: flex;
+}
+
+.flex-stuff {
+    display: flex;
+}
