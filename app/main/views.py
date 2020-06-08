@@ -44,6 +44,7 @@ def new_post():
 @main.route('/user/<uname>')
 def profile(uname):
     user = User.query.filter_by(username = uname).first()
+    
 
     if user is None:
         abort(404)

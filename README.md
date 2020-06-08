@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/3f1a8631434131e16bd7/maintainability)](https://codeclimate.com/github/brayokenya/Scribble/maintainability)
+
 # Scribbles
 Scribbles is an application that allows users to create  one minute pitches. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
