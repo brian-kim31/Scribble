@@ -22,7 +22,7 @@ or download the zip file from github.
 After extracting the files, 
 
 1. Navigate to the project folder
->`` cd gitSearch.`` 
+>`` cd name_of_folder`` 
 
 2. Creating a virtual environment
 >``virtualenv virtual.``
@@ -83,8 +83,8 @@ After extracting the files,
 ## Fun Fact
 I broke a sweat
 
-## License
-> MIT License &copy; 2020 Brian Kiiru
+## [License](https://github.com/brayokenya/Scribble/blob/master/LICENSE)
+> MIT License &copy; 2020 Brian Kiiru 
 
 ## Collaborate
 To collaborate, reach me on [kiirubrian21@gmail.com]()
