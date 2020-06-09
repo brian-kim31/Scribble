@@ -83,8 +83,8 @@ After extracting the files,
 ## Fun Fact
 I broke a sweat
 
-## License
-> MIT License &copy; 2020 Brian Kiiru [https://github.com/brayokenya/Scribble/blob/master/LICENSE]
+## [License] (https://github.com/brayokenya/Scribble/blob/master/LICENSE)
+> MIT License &copy; 2020 Brian Kiiru 
 
 ## Collaborate
 To collaborate, reach me on [kiirubrian21@gmail.com]()
