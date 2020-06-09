@@ -22,7 +22,7 @@ or download the zip file from github.
 After extracting the files, 
 
 1. Navigate to the project folder
->`` cd gitSearch.`` 
+>`` cd name_of_folder`` 
 
 2. Creating a virtual environment
 >``virtualenv virtual.``
