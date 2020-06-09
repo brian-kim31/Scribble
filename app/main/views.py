@@ -6,7 +6,6 @@ from ..models import User, Post, Comment, Upvote, Downvote
 from .. import db,photos
 
 
-
 # Views
 @main.route('/')
 def index():
