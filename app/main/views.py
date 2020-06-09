@@ -127,7 +127,7 @@ def user():
     return render_template('profile.html', user=user)
 
 
-@main.route('/user/<name>/update_profile', methods=['POST', 'GET'])
+@main.route('/user/<name>/profile', methods=['POST', 'GET'])
 @login_required
 def updateprofile(name):
     form = UpdateProfile()
@@ -138,7 +138,7 @@ def updateprofile(name):
         user.bio = form.bio.data
         user.save()
         return redirect(url_for('.profile', name=name))
-    return render_template('profile/update_profile.html', form=form)
+    return render_template('profile/profile.html', form=form)
 
 
 @main.route('/like/<int:id>', methods=['POST', 'GET'])
