@@ -1,9 +1,9 @@
 from flask import render_template,request,redirect,url_for,abort
 from . import main
 from .forms import PitchForm, UpdateProfile, CommentForm, UpdateProfile
+from flask_login import login_required, current_user
 from ..models import User, Post, Comment, Upvote, Downvote
 from .. import db,photos
-from flask_login import login_required, current_user
 
 
 
@@ -89,7 +89,8 @@ def update_pic(uname):
 def posts():
     posts = Post.query.all()
     likes = Upvote.query.all()
-    return render_template('pitch_display.html', posts=posts, likes=likes)
+    
+    return render_template('pitch_display.html', posts=posts, likes=likes, user=user)
 
 
 
