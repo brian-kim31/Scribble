@@ -9,22 +9,34 @@ body {
     justify-content: center;
 }
 
+.login-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#login {
+    font-weight: bold;
+}
+
+#logo {
+    font-family: 'Special Elite', cursive;
+    color: #ed5107;
+    font-size: 20px;
+}
+
+#option-signup {
+    margin-top: 20px;
+}
+
+.division {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
 #centered-card {
     margin: 0;
     padding: 0;
-}
-
-#hellobutton {
-    margin-top: 20px;
-    border: 0;
-    background: orangered;
-    width: 80px;
-    height: 40px;
-    box-shadow: #989898 0 0 20px;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-    justify-content: right;
 }
 
 #hellobutton:hover {
@@ -52,6 +64,16 @@ body {
 .site-header a:hover {
     color: #fff;
     text-decoration: none;
+}
+
+.bgimage {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding-top: 70px;
+    padding-bottom: 130px;
 }
 
 #buttons {

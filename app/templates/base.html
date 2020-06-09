@@ -1,8 +1,9 @@
 {% extends 'bootstrap/base.html'%}
 
+<head>
+    {% block head %} {{super()}}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/particle.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">{% endblock%}
+</head>
 <!-- Navbar block  -->
-{% block navbar %} {% include 'navbar.html' %} {% endblock%} {%block styles %} {{super()}}
-
-
-<!--Importing the simple mde css and js files  -->
-{% endblock %}
+{% block navbar %} {% include 'navbar.html' %} {% endblock%} {% block content %} {%endblock%}
